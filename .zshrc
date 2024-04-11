@@ -125,6 +125,7 @@ export FZF_DEFAULT_OPTS=" \
 
 alias weather="curl 'wttr.in/?T'"
 alias cat="bat -pp"
+alias less="bat -p"
 alias ip="ip --color=auto"
 alias diff='diff --color=auto'
 alias l="eza -la --icons"
@@ -168,6 +169,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# zoxide
+eval "$(zoxide init zsh --cmd cd)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
