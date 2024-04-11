@@ -1,6 +1,11 @@
 # dotfiles
 spec's dotfiles
 
+# Guides
+[Git Subtree Guide](https://www.atlassian.com/git/tutorials/git-subtree)
+
+https://youtu.be/y6XCebnB9gs
+
 # Update commands
 ```sh
 git subtree pull --prefix .oh-my-zsh oh-my-zsh master --squash
