@@ -48,6 +48,7 @@ git remote add --fetch --track main NvChad https://github.com/NvChad/starter.git
 git remote add --fetch --track master pyenv https://github.com/pyenv/pyenv.git
 git remote add --fetch --track master pyenv-virtualenv https://github.com/pyenv/pyenv-virtualenv.git
 
+# only needed this while creating the dotfile repo, wont need this ever again. Unless new repos are added ofc
 git subtree add --prefix .oh-my-zsh oh-my-zsh master --squash
 git subtree add --prefix .oh-my-zsh/custom/themes/powerlevel10k powerlevel10k master --squash
 git subtree add --prefix .oh-my-zsh/custom/plugins/zsh-completions zsh-completions master --squash
