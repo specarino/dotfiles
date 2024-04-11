@@ -1,0 +1,9 @@
+git subtree pull --prefix .oh-my-zsh oh-my-zsh master --squash
+git subtree pull --prefix .oh-my-zsh/custom/themes/powerlevel10k powerlevel10k master --squash
+git subtree pull --prefix .oh-my-zsh/custom/plugins/zsh-completions zsh-completions master --squash
+git subtree pull --prefix .oh-my-zsh/custom/plugins/zsh-autosuggestions zsh-autosuggestions master --squash
+git subtree pull --prefix .oh-my-zsh/custom/plugins/zsh-syntax-highlighting zsh-syntax-highlighting master --squash
+git subtree pull --prefix .oh-my-zsh/custom/plugins/zsh-history-substring-search zsh-history-substring-search master --squash
+git subtree pull --prefix .config/nvchad NvChad main --squash
+git subtree pull --prefix .pyenv pyenv master --squash
+git subtree pull --prefix .pyenv/plugins/pyenv-virtualenv pyenv-virtualenv master --squash
