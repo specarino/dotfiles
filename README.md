@@ -38,15 +38,15 @@ git subtree pull --prefix .pyenv/plugins/pyenv-virtualenv pyenv-virtualenv maste
 
 # Subtree Commands Used
 ```sh
-git remote add -fetch --track master oh-my-zsh https://github.com/ohmyzsh/ohmyzsh.git
-git remote add -fetch --track master powerlevel10k https://github.com/romkatv/powerlevel10k.git
-git remote add -fetch --track master zsh-completions https://github.com/zsh-users/zsh-completions.git
-git remote add -fetch --track master zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions.git
-git remote add -fetch --track master zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting.git
-git remote add -fetch --track master zsh-history-substring-search https://github.com/zsh-users/zsh-history-substring-search.git
-git remote add -fetch --track main NvChad https://github.com/NvChad/starter.git
-git remote add -fetch --track master pyenv https://github.com/pyenv/pyenv.git
-git remote add -fetch --track master pyenv-virtualenv https://github.com/pyenv/pyenv-virtualenv.git
+git remote add --fetch --track master oh-my-zsh https://github.com/ohmyzsh/ohmyzsh.git
+git remote add --fetch --track master powerlevel10k https://github.com/romkatv/powerlevel10k.git
+git remote add --fetch --track master zsh-completions https://github.com/zsh-users/zsh-completions.git
+git remote add --fetch --track master zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions.git
+git remote add --fetch --track master zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting.git
+git remote add --fetch --track master zsh-history-substring-search https://github.com/zsh-users/zsh-history-substring-search.git
+git remote add --fetch --track main NvChad https://github.com/NvChad/starter.git
+git remote add --fetch --track master pyenv https://github.com/pyenv/pyenv.git
+git remote add --fetch --track master pyenv-virtualenv https://github.com/pyenv/pyenv-virtualenv.git
 
 git subtree add --prefix .oh-my-zsh oh-my-zsh master --squash
 git subtree add --prefix .oh-my-zsh/custom/themes/powerlevel10k powerlevel10k master --squash
