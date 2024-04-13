@@ -135,7 +135,7 @@ alias tksv='tmux kill-server'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....="cd ../../../.."
-alias nf="neofetch"
+alias nf="clear; neofetch"
 alias nv="NVIM_APPNAME=nvchad nvim"
 alias z="zellij"
 
