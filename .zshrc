@@ -173,5 +173,8 @@ eval "$(pyenv virtualenv-init -)"
 # zoxide
 eval "$(zoxide init zsh --cmd cd)"
 
+# bin directory within home dir
+export PATH=/home/spec/bin:$PATH
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
