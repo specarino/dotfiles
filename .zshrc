@@ -138,6 +138,8 @@ alias .....="cd ../../../.."
 alias nf="clear; neofetch"
 alias nv="NVIM_APPNAME=nvchad nvim"
 alias z="zellij"
+alias pls="sudo"
+alias gitgud="git fetch --all && git pull"
 
 # pfetch on clear command shenanigans
 # redisplay is for prompt
