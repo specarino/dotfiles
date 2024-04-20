@@ -175,6 +175,9 @@ eval "$(pyenv virtualenv-init -)"
 # zoxide
 eval "$(zoxide init zsh --cmd cd)"
 
+# thefuck
+eval "$(thefuck --alias)"
+
 # bin directory within home dir
 export PATH=/home/spec/bin:$PATH
 
