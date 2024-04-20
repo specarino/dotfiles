@@ -140,6 +140,7 @@ alias nv="NVIM_APPNAME=nvchad nvim"
 alias z="zellij"
 alias pls="sudo"
 alias gitgud="git fetch --all && git pull"
+alias lgit="lazygit"
 
 # pfetch on clear command shenanigans
 # redisplay is for prompt
