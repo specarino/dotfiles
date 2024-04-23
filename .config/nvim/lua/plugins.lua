@@ -22,6 +22,7 @@ require("lazy").setup({
             vim.cmd.colorscheme("tokyonight-night")
         end,
     },
+
     {
         "nvim-treesitter/nvim-treesitter",
         config = function()
@@ -93,7 +94,51 @@ require("lazy").setup({
             })
         end,
     },
+
     {
         "nvim-treesitter/nvim-treesitter-textobjects",
-    }
+    },
+
+    {
+        "neovim/nvim-lspconfig",
+    },
+
+    {
+        "williamboman/mason.nvim",
+        config = function()
+            require("mason").setup()
+        end,
+    },
+
+    {
+        "williamboman/mason-lspconfig.nvim",
+        dependencies = { "mason.nvim" },
+        config = function()
+            require("mason-lspconfig").setup()
+            require("mason-lspconfig").setup_handlers({
+                function(server_name)
+                    require("lspconfig")[server_name].setup({})
+                end,
+            })
+        end,
+    },
+
+    -- Bufferline
+    {
+        'akinsho/bufferline.nvim',
+        dependencies = {
+            'nvim-tree/nvim-web-devicons'
+        },
+        config = function()
+            require("bufferline").setup({
+                options = {
+                    hover = {
+                        enabled = true,
+                        delay = 150,
+                        reveal = {'close'}
+                    }
+                }
+            })
+        end,
+    },
 })
