@@ -4,7 +4,7 @@ git remote add --fetch --track master zsh-completions https://github.com/zsh-use
 git remote add --fetch --track master zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions.git
 git remote add --fetch --track master zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting.git
 git remote add --fetch --track master zsh-history-substring-search https://github.com/zsh-users/zsh-history-substring-search.git
-git remote add --fetch --track main NvChad https://github.com/NvChad/starter.git
+git remote add --fetch --track main LazyVim https://github.com/LazyVim/starter.git
 git remote add --fetch --track master pyenv https://github.com/pyenv/pyenv.git
 git remote add --fetch --track master pyenv-virtualenv https://github.com/pyenv/pyenv-virtualenv.git
 git remote add --fetch --track master tpm https://github.com/tmux-plugins/tpm.git

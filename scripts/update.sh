@@ -4,7 +4,7 @@ git subtree pull --prefix .oh-my-zsh/custom/plugins/zsh-completions zsh-completi
 git subtree pull --prefix .oh-my-zsh/custom/plugins/zsh-autosuggestions zsh-autosuggestions master --squash -m "updated zsh-autosuggestions"
 git subtree pull --prefix .oh-my-zsh/custom/plugins/zsh-syntax-highlighting zsh-syntax-highlighting master --squash -m "updated zsh-syntax-highlighting"
 git subtree pull --prefix .oh-my-zsh/custom/plugins/zsh-history-substring-search zsh-history-substring-search master --squash -m "updated zsh-history-substring-search"
-git subtree pull --prefix .config/nvchad NvChad main --squash -m "updated nvchad"
+git subtree pull --prefix .config/lazyvim LazyVim main --squash -m "updated lazyvim"
 git subtree pull --prefix .pyenv pyenv master --squash -m "updated pyenv"
 git subtree pull --prefix .pyenv/plugins/pyenv-virtualenv pyenv-virtualenv master --squash -m "updated pyenv-virtualenv"
 git subtree pull --prefix .config/tmux/plugins/tpm tpm master --squash -m "updated tpm"

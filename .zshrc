@@ -145,7 +145,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....="cd ../../../.."
 alias nf="clear; neofetch"
-alias nv="NVIM_APPNAME=nvchad nvim"
+alias lvim="NVIM_APPNAME=lazyvim nvim"
 alias pls="sudo"
 alias gitgud="git fetch --all && git pull"
 alias lgit="lazygit"

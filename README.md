@@ -26,8 +26,8 @@ git subtree pull --prefix .oh-my-zsh/custom/plugins/zsh-syntax-highlighting zsh-
 git fetch zsh-history-substring-search master
 git subtree pull --prefix .oh-my-zsh/custom/plugins/zsh-history-substring-search zsh-history-substring-search master --squash -m "updated zsh-history-substring-search"
 
-git fetch NvChad main
-git subtree pull --prefix .config/nvchad NvChad main --squash -m "updated nvchad"
+git fetch LazyVim main
+git subtree pull --prefix .config/lazyvim LazyVim main --squash -m "updated lazyvim"
 
 git fetch pyenv master
 git subtree pull --prefix .pyenv pyenv master --squash -m "updated pyenv"
@@ -47,7 +47,7 @@ git remote add --fetch --track master zsh-completions https://github.com/zsh-use
 git remote add --fetch --track master zsh-autosuggestions https://github.com/zsh-users/zsh-autosuggestions.git
 git remote add --fetch --track master zsh-syntax-highlighting https://github.com/zsh-users/zsh-syntax-highlighting.git
 git remote add --fetch --track master zsh-history-substring-search https://github.com/zsh-users/zsh-history-substring-search.git
-git remote add --fetch --track main NvChad https://github.com/NvChad/starter.git
+git remote add --fetch --track main LazyVim https://github.com/LazyVim/starter.git
 git remote add --fetch --track master pyenv https://github.com/pyenv/pyenv.git
 git remote add --fetch --track master pyenv-virtualenv https://github.com/pyenv/pyenv-virtualenv.git
 git remote add --fetch --track master tpm https://github.com/tmux-plugins/tpm.git
@@ -59,7 +59,7 @@ git subtree add --prefix .oh-my-zsh/custom/plugins/zsh-completions zsh-completio
 git subtree add --prefix .oh-my-zsh/custom/plugins/zsh-autosuggestions zsh-autosuggestions master --squash
 git subtree add --prefix .oh-my-zsh/custom/plugins/zsh-syntax-highlighting zsh-syntax-highlighting master --squash
 git subtree add --prefix .oh-my-zsh/custom/plugins/zsh-history-substring-search zsh-history-substring-search master --squash
-git subtree add --prefix .config/nvchad NvChad main --squash
+git subtree add --prefix .config/lazyvim LazyVim main --squash
 git subtree add --prefix .pyenv pyenv master --squash
 git subtree add --prefix .pyenv/plugins/pyenv-virtualenv pyenv-virtualenv master --squash
 git subtree add --prefix .config/tmux/plugins/tpm tpm master --squash
