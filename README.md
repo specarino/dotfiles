@@ -34,6 +34,9 @@ git subtree pull --prefix .pyenv pyenv master --squash -m "updated pyenv"
 
 git fetch pyenv-virtualenv master
 git subtree pull --prefix .pyenv/plugins/pyenv-virtualenv pyenv-virtualenv master --squash -m "updated pyenv-virtualenv"
+
+git fetch tpm master
+git subtree pull --prefix .config/tmux/plugins/tpm tpm master --squash -m "updated tpm"
 ```
 
 # Subtree Commands Used
@@ -47,6 +50,7 @@ git remote add --fetch --track master zsh-history-substring-search https://githu
 git remote add --fetch --track main NvChad https://github.com/NvChad/starter.git
 git remote add --fetch --track master pyenv https://github.com/pyenv/pyenv.git
 git remote add --fetch --track master pyenv-virtualenv https://github.com/pyenv/pyenv-virtualenv.git
+git remote add --fetch --track master tpm https://github.com/tmux-plugins/tpm.git
 
 # only needed this while creating the dotfile repo, wont need this ever again. Unless new repos are added ofc
 git subtree add --prefix .oh-my-zsh oh-my-zsh master --squash
@@ -58,4 +62,5 @@ git subtree add --prefix .oh-my-zsh/custom/plugins/zsh-history-substring-search 
 git subtree add --prefix .config/nvchad NvChad main --squash
 git subtree add --prefix .pyenv pyenv master --squash
 git subtree add --prefix .pyenv/plugins/pyenv-virtualenv pyenv-virtualenv master --squash
+git subtree add --prefix .config/tmux/plugins/tpm tpm master --squash
 ```
