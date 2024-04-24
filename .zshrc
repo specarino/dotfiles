@@ -85,9 +85,13 @@ plugins=(
   zsh-syntax-highlighting
   zsh-autosuggestions
   zsh-history-substring-search
+  tmux
 )
 
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+
+# tmux stuff
+ZSH_TMUX_AUTOSTART="true"
 
 source $ZSH/oh-my-zsh.sh
 
