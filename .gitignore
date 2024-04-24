@@ -3,3 +3,6 @@
 # C-a I in tmux to download the plugins
 .config/tmux/plugins/*
 !.config/tmux/plugins/tpm/
+
+# ignore btop logs
+.config/btop/btop.log
