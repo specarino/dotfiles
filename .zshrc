@@ -187,6 +187,9 @@ eval "$(zoxide init zsh --cmd cd)"
 # thefuck
 eval "$(thefuck --alias)"
 
+# atuin
+eval "$(atuin init zsh)"
+
 # bin directory within home dir
 export PATH=/home/spec/bin:$PATH
 
