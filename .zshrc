@@ -128,7 +128,8 @@ alias cat="bat -pp"
 alias less="bat -p"
 alias ip="ip --color=auto"
 alias diff='diff --color=auto'
-alias ls="eza --icons -a --git --color=always --group-directories-first"
+alias ls="eza --icons --git --color=always --group-directories-first"
+alias lsa="eza --icons -a --git --color=always --group-directories-first"
 alias l="eza -l -a -h --no-user --no-permissions --icons --git --color=always --group-directories-first -@ -b --created -m"
 alias vim="nvim"
 alias tksv='tmux kill-server'
@@ -137,7 +138,6 @@ alias ....='cd ../../..'
 alias .....="cd ../../../.."
 alias nf="clear; neofetch"
 alias nv="NVIM_APPNAME=nvchad nvim"
-alias z="zellij"
 alias pls="sudo"
 alias gitgud="git fetch --all && git pull"
 alias lgit="lazygit"
