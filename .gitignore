@@ -1,5 +1,5 @@
-# tmux plugin manager clones from the plugins' repo
-# this violates the subtree structure of my dotfiles repo
-# i am adding this as a temporary fix while i decide if i am keeping tpm or nah
+# tpm clones from the plugins' repo, which is the recommended way
+# this violates the subtree structure of my dotfiles repo, but we ball
+# C-a I in tmux to download the plugins
 .config/tmux/plugins/*
 !.config/tmux/plugins/tpm/
