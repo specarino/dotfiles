@@ -1,3 +1,7 @@
+if [ -z "$TMUX" ]; then
+  exec tmux new-session -A -s workspace
+fi
+
 export PF_INFO="ascii title os kernel uptime shell pkgs memory"
 pfetch
 
