@@ -14,7 +14,7 @@
 # session_path = "~/.session"
 
 ## date format used, either "us" or "uk"
-# dialect = "us"
+dialect = "uk"
 
 ## default timezone to use when displaying time
 ## either "l", "local" to use the system's current local timezone, or an offset
@@ -135,7 +135,7 @@
 
 ## Defaults to true. If enabled, upon hitting enter Atuin will immediately execute the command. Press tab to return to the shell and edit.
 # This applies for new installs. Old installs will keep the old behaviour unless configured otherwise.
-enter_accept = true
+enter_accept = false
 
 ## Defaults to "emacs".  This specifies the keymap on the startup of `atuin
 ## search`.  If this is set to "auto", the startup keymap mode in the Atuin
