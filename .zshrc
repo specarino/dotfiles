@@ -139,6 +139,7 @@ alias diff='diff --color=auto'
 alias ls="eza --icons --git --color=always --group-directories-first"
 alias lsa="eza --icons -a --git --color=always --group-directories-first"
 alias l="eza -l -a -h --no-user --no-permissions --icons --git --color=always --group-directories-first -@ -b --created -m"
+alias tree="eza -T"
 alias vim="nvim"
 alias tksv='tmux kill-server'
 alias ...='cd ../..'
