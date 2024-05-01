@@ -150,8 +150,10 @@ alias lvim="NVIM_APPNAME=lazyvim nvim"
 alias lgit="lazygit"
 alias pls="sudo"
 alias gitgud="git fetch --all && git pull"
-alias rm="rmtrash"
-alias rmdir="rmdirtrash"
+alias rm="rmtrash --forbid-root=ask-forbid"
+alias rmdir="rmdirtrash --forbid-root=ask-forbid"
+# without it, rmtrash and rmdirtrash won’t be called when using sudo
+alias sudo="sudo "
 
 # pfetch on clear command shenanigans
 # redisplay is for prompt
