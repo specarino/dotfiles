@@ -5,5 +5,5 @@ kitty stow neovim fzf ripgrep bat eza zoxide tmux entr lazygit ranger glow tldr 
 
 # AUR Packages
 ```
-paru
+rmtrash
 ```

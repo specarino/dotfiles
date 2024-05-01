@@ -150,6 +150,8 @@ alias lvim="NVIM_APPNAME=lazyvim nvim"
 alias lgit="lazygit"
 alias pls="sudo"
 alias gitgud="git fetch --all && git pull"
+alias rm="rmtrash"
+alias rmdir="rmdirtrash"
 
 # pfetch on clear command shenanigans
 # redisplay is for prompt
