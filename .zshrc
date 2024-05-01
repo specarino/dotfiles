@@ -2,8 +2,7 @@ if [ -z "$TMUX" ]; then
   exec tmux new-session -A -s workspace
 fi
 
-export PF_INFO="ascii title os kernel uptime shell pkgs memory"
-pfetch
+fastfetch
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -145,16 +144,16 @@ alias tksv='tmux kill-server'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....="cd ../../../.."
+alias neofetch="fastfetch -c ~/.config/fastfetch/neofetch.jsonc"
 alias nf="clear; neofetch"
-alias ff="clear; fastfetch"
 alias lvim="NVIM_APPNAME=lazyvim nvim"
+alias lgit="lazygit"
 alias pls="sudo"
 alias gitgud="git fetch --all && git pull"
-alias lgit="lazygit"
 
 # pfetch on clear command shenanigans
 # redisplay is for prompt
-clearfetch () { echo; clear; pfetch; zle redisplay }
+clearfetch () { echo; clear; fastfetch; zle redisplay }
 zle -N clearfetch
 bindkey '^l' clearfetch
 
