@@ -2,12 +2,13 @@
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: Material Design Icons, JetBrainsMono Nerd Font;
+  font-family: Material Design Icons, BitstromWera Nerd Font;
   font-size: 13px;
 }
 
 window#waybar {
-  background-color: #181825;
+  /* background-color: #181825; */
+  background-color: transparent;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
@@ -117,7 +118,7 @@ window#waybar.hidden {
 }
 
 #clock {
-  font-family: JetBrainsMono Nerd Font;
+  font-family: BitstromWera Nerd Font;
   background-color: #cba6f7;
 }
 

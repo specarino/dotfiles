@@ -7,18 +7,18 @@
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-	"custom/logo",
+	    "custom/logo",
         "hyprland/workspaces"
     ],
     "modules-center": [
         "clock"
     ],
     "modules-right": [
-        "tray",
-	"memory",
-	"network",
-	"pulseaudio",
-	"battery"
+	    "memory",
+	    "network",
+	    "pulseaudio",
+	    "battery",
+        "tray"
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -109,15 +109,16 @@
     },
     "clock": {
         // "timezone": "America/New_York",
+        "format": "{:%I:%M %p}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%d/%m/%Y}"
     },
     "cpu": {
         "format": "{usage}% ",
         "tooltip": false
     },
     "memory": {
-        "format": "{}% "
+        "format": "{}% 󰑭"
     },
     "temperature": {
         // "thermal-zone": 2,
