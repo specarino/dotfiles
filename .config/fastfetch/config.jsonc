@@ -45,7 +45,7 @@
       {
           "type": "uptime",
           "key": "󰅐",
-          "format": "{2}h {3}m"
+          "format": "{1}d {2}h {3}m"
       },
       {
           "type": "packages",
