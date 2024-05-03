@@ -17,6 +17,7 @@
 	    "memory",
 	    "network",
 	    "pulseaudio",
+        "backlight",
 	    "battery",
         "tray"
     ],
@@ -35,7 +36,7 @@
             "7": "7",
             "8": "8",
             "9": "9",
-            "active": "󱓻",
+            "active": "",
             "urgent": "󱓻"
         },
         "persistent_workspaces": {
