@@ -8,18 +8,19 @@
     // Choose the order of the modules
     "modules-left": [
 	    "custom/logo",
-        "hyprland/workspaces"
+        "cpu",
+        "memory",
+        "tray"
     ],
     "modules-center": [
-        "clock"
+        "hyprland/workspaces"
     ],
     "modules-right": [
-	    "memory",
 	    "network",
 	    "pulseaudio",
         "backlight",
 	    "battery",
-        "tray"
+        "clock"
     ],
     // Modules configuration
     "hyprland/workspaces": {
@@ -48,7 +49,7 @@
         }
     },
     "custom/logo": {
-        "format": "  ",
+        "format": "",
         "tooltip": false,
         "on-click": "wofi --show drun &"
     },
