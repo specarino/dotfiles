@@ -29,6 +29,9 @@ window#waybar.hidden {
   padding: 6px 18px;
   margin: 6px 3px;
   border-radius: 16px;
+  border-style: solid;
+  border-width: 0px;
+  border-color: @text;
   background-color: @base;
   color: @text;
 }
@@ -39,10 +42,10 @@ window#waybar.hidden {
 }
 
 #workspaces button:hover {
- box-shadow: inherit;
- text-shadow: inherit;
- color: @base;
- background-color: @text;
+  box-shadow: inherit;
+  text-shadow: inherit;
+  color: @base;
+  background-color: @text;
 }
 
 #workspaces button.urgent {
@@ -60,6 +63,9 @@ window#waybar.hidden {
 #clock,
 #tray {
   border-radius: 16px;
+  border-style: solid;
+  border-width: 0px;
+  border-color: @text;
   margin: 6px 3px;
   padding: 6px 12px;
   background-color: @base;
@@ -72,7 +78,7 @@ window#waybar.hidden {
 
 #custom-logo {
   padding-left: 16px;
-  padding-right: 20px;
+  padding-right: 21px;
   color: @sky;
 }
 
