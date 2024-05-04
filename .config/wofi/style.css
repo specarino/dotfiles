@@ -1,10 +1,12 @@
+@import "mocha.css";
+
 * {
   font-family: BitstromWera Nerd Font;
 }
 
 window {
   margin: 1px;
-  border: 10px solid #7aa2f7;
+  border: 10px solid #cba6f7;
   border-radius: 10px;
 }
 
@@ -12,32 +14,33 @@ window {
   margin: 5px;
   border-radius: 0px;
   border: none;
-  border-bottom: 0px solid #c0caf5;
-  background-color: #1d202f;
-  color: #c0caf5;
+  border-bottom: 0px solid #cba6f7;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
 }
 
 #inner-box {
   margin: 5px;
-  background-color: #1d202f;
+  background-color: #1e1e2e;
 }
 
 #outer-box {
   margin: 3px;
   padding: 20px;
-  background-color: #1d202f;
+  background-color: #1e1e2e;
   border-radius: 10px;
 }
 
 #text {
   margin: 5px;
-  color: #c0caf5;
+  color: #cdd6f4;
 }
 
 #entry:selected {
-  background-color: #414868;
+  background-color: #11111b;
+  border-radius: 10px;
 }
 
 #text:selected {
-  text-decoration-color: #c0caf5;
+  text-decoration-color: #cdd6f4;
 }
