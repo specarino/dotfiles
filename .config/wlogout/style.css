@@ -9,11 +9,11 @@
 }
 
 window {
-	background-color: rgba(30, 30, 46, 0.9);
+	background-color: rgba(30, 30, 46, 0.75);
 }
 
 button {
-    border-radius: 16px;
+    border-radius: 32px;
     border-color: @crust;
 	text-decoration-color: @text;
     color: @text;
