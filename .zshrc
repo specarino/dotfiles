@@ -1,6 +1,7 @@
-if [ -z "$TMUX" ]; then
-  exec tmux new-session -A -s workspace
-fi
+# Autostart tmux
+# if [ -z "$TMUX" ]; then
+#  exec tmux new-session -A -s workspace
+# fi
 
 fastfetch
 
@@ -94,7 +95,7 @@ plugins=(
 fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 # tmux stuff
-ZSH_TMUX_AUTOSTART="true"
+ZSH_TMUX_DEFAULT_SESSION_NAME="workspace"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -140,7 +141,6 @@ alias lsa="eza --icons -a --git --color=always --group-directories-first"
 alias l="eza -l -a -h --no-user --no-permissions --icons --git --color=always --group-directories-first -@ -b --created -m"
 alias tree="eza -T"
 alias vim="nvim"
-alias tksv='tmux kill-server'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....="cd ../../../.."
