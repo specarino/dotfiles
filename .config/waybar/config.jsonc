@@ -140,7 +140,7 @@
         "states": {
             // "good": 95,
             "warning": 25,
-            "critical": 15
+            "critical": 10
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
