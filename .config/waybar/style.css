@@ -32,8 +32,8 @@ window#waybar.hidden {
   border-style: solid;
   border-width: 0px;
   border-color: @text;
-  background-color: @base;
-  color: @text;
+  background-color: @surface0;
+  color: @rosewater;
 }
 
 #workspaces button.active {
@@ -68,7 +68,7 @@ window#waybar.hidden {
   border-color: @text;
   margin: 6px 3px;
   padding: 6px 12px;
-  background-color: @base;
+  background-color: @surface0;
   color: @mantle;
 }
 
