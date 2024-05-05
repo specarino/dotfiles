@@ -178,6 +178,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "pgrep pavucontrol || pavucontrol",
+        "on-click-right": "pkill pavucontrol"
     },
 }
