@@ -51,7 +51,8 @@
     "custom/logo": {
         "format": "",
         "tooltip": false,
-        "on-click": "wofi --show drun &"
+        "on-click": "wofi --show drun &",
+        "on-click-right": "wlogout -c 10 -T 450 -B 450 -L 700 -R 700"
     },
     "keyboard-state": {
         "numlock": true,
@@ -138,12 +139,12 @@
     "battery": {
         "states": {
             // "good": 95,
-            "warning": 30,
+            "warning": 25,
             "critical": 15
         },
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ",
+        "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
         // "format-good": "", // An empty format will hide the module

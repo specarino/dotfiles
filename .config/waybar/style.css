@@ -89,7 +89,8 @@ window#waybar.hidden {
   background-color: @lavender;
 }
 #battery {
-  background-color: @red;
+  background-color: @blue;
+  color: @mantle;
 }
 @keyframes blink {
   to {
@@ -98,19 +99,17 @@ window#waybar.hidden {
   }
 }
 
-#battery.warning,
-#battery.critical,
-#battery.urgent {
-  background-color: @red;
+#battery.charging {
+  background-color: @green;
   color: @mantle;
+}
+#battery.discharging.warning,
+#battery.discharging.critical {
   animation-name: blink;
   animation-duration: 0.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-}
-#battery.charging {
-  background-color: @green;
 }
 
 #backlight {
