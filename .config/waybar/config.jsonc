@@ -127,8 +127,8 @@
     },
     "battery": {
         "states": {
-            "good": 100,
-            "warning": 50,
+            // "good": 95,
+            "warning": 25,
             "critical": 10
         },
         "format": "{capacity}% {icon}",
@@ -136,7 +136,7 @@
         "format-charging": "{capacity}% 󰂄",
         "format-plugged": "{capacity}% ",
         "format-alt": "{power}W ",
-        "format-good": "", // An empty format will hide the module
+        //"format-good": "", // An empty format will hide the module
         "format-full": "",
         "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
