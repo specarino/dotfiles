@@ -134,7 +134,7 @@
         "format": "{capacity}% {icon}",
         "format-full": "{capacity}% {icon}",
         "format-charging": "{capacity}% 󰂄",
-        "format-plugged": "{capacity}% ",
+        "format-plugged": "",
         "format-alt": "{power}W ",
         //"format-good": "", // An empty format will hide the module
         "format-full": "",
