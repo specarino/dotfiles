@@ -126,7 +126,7 @@ window#waybar.hidden {
 }
 
 #temperature {
-  color: @red;
+  color: @pink;
 }
 
 tooltip {
