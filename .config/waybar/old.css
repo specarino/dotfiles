@@ -80,25 +80,25 @@ window#waybar.hidden {
 }
 
 #memory {
-  color: @peach;
+  background-color: @peach;
 }
 #cpu {
-  color: @lavender;
+  background-color: @lavender;
 }
 #battery {
-  color: @red;
-  background-color: @surface0;
+  background-color: @blue;
+  color: @mantle;
 }
 @keyframes blink {
   to {
     background-color: @red;
-    color: @surface0;
+    color: @mantle;
   }
 }
 
 #battery.charging {
-  color: @green;
-  background-color: @surface0;
+  background-color: @green;
+  color: @mantle;
 }
 #battery.discharging.warning,
 #battery.discharging.critical {
@@ -110,23 +110,23 @@ window#waybar.hidden {
 }
 
 #backlight {
-  color: @peach;
+  background-color: @peach;
 }
 
 #pulseaudio {
-  color: @yellow;
+  background-color: @yellow;
 }
 
 #network {
-  color: @teal;
+  background-color: @teal;
 }
 
 #clock {
-  color: @mauve;
+  background-color: @mauve;
 }
 
 #temperature {
-  color: @red;
+  background-color: @red;
 }
 
 tooltip {
