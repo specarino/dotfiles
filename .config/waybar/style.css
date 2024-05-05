@@ -4,7 +4,7 @@
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: BitstromWera Nerd Font;
+  font-family: BitstromWera Nerd Font Propo;
   font-size: 14px;
 }
 
@@ -54,7 +54,7 @@ window#waybar.hidden {
 
 #memory,
 #cpu,
-#custom-power,
+#temperature,
 #custom-logo,
 #battery,
 #backlight,
@@ -72,13 +72,10 @@ window#waybar.hidden {
   color: @mantle;
 }
 
-#custom-power {
-  margin-right: 6px;
-}
-
+#tray,
 #custom-logo {
-  padding-left: 16px;
-  padding-right: 21px;
+  padding-left: 20px;
+  padding-right: 20px;
   color: @sky;
 }
 
@@ -122,18 +119,15 @@ window#waybar.hidden {
 
 #network {
   background-color: @teal;
-  padding-right: 17px;
 }
 
 #clock {
-  font-family: BitstromWera Nerd Font;
   background-color: @mauve;
 }
 
-#custom-power {
-  background-color: @flamingo;
+#temperature {
+  background-color: @red;
 }
-
 
 tooltip {
 border-radius: 8px;
