@@ -38,14 +38,14 @@ window#waybar.hidden {
 
 #workspaces button.active {
   color: @base;
-  background-color: @text;
+  background-color: @rosewater;
 }
 
 #workspaces button:hover {
   box-shadow: inherit;
   text-shadow: inherit;
   color: @base;
-  background-color: @text;
+  background-color: @rosewater;
 }
 
 #workspaces button.urgent {
@@ -92,7 +92,7 @@ window#waybar.hidden {
 @keyframes blink {
   to {
     background-color: @red;
-    color: @surface0;
+    color: @base;
   }
 }
 
