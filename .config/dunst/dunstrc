@@ -176,7 +176,7 @@
     #   %n  progress value if set without any extra characters
     #   %%  Literal %
     # Markup is allowed
-    format = "<b>%s</b>\n%b\n%p\n%a"
+    format = "%a\n<b>%s</b>\n%b\n%p"
 
     # Alignment of message text.
     # Possible values are "left", "center" and "right".
@@ -340,7 +340,7 @@
     #default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#f9e2af"
+    background = "#cba6f7"
     foreground = "#11111b"
     timeout = 8
     override_pause_level = 30
