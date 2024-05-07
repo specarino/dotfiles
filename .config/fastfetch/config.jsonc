@@ -17,7 +17,7 @@
         "keys": "magenta"
       },
       "size": {
-        "maxPrefix": "YB",
+        "maxPrefix": "MB",
         "ndigits": 0
       },
       "binaryPrefix": "jedec"
