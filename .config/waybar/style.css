@@ -79,6 +79,10 @@ window#waybar.hidden {
   color: @sapphire;
 }
 
+#temperature {
+  color: @pink;
+  background-color: @surface0;
+}
 #memory {
   color: @peach;
 }
@@ -100,6 +104,7 @@ window#waybar.hidden {
   color: @green;
   background-color: @surface0;
 }
+#temperature.critical,
 #battery.discharging.warning,
 #battery.discharging.critical {
   animation-name: blink;
@@ -123,10 +128,6 @@ window#waybar.hidden {
 
 #clock {
   color: @mauve;
-}
-
-#temperature {
-  color: @pink;
 }
 
 tooltip {
