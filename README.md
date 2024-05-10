@@ -2,6 +2,8 @@
 > [!WARNING]  
 > *I made this repo for my own use, feel free to check it out but **don't blindly clone it** and apply the dotfiles because I have no idea what will happen as there is no error checking.*
 
+![screenshot of hyprland, waybar and wofi](assets/screenshot01.png)
+
 # Introduction
 
 My dotfiles repo follows a batteries-included model. Through the use of [Git Subtree](https://www.atlassian.com/git/tutorials/git-subtree), I can import external solutions like OhMyZsh and pyenv directly to my repo instead of needing to prep every machine before applying my dotfiles. The reason for using Subtree over Submodule is because I needed the ability to nest repos (like Powerlevel10k repo within OhMyZsh's repo).
@@ -13,6 +15,3 @@ The [`scripts`](scripts) directory contains two files, [`init.sh`](scripts/init.
 # Packages
 
 The [`PACKAGES.md`](PACKAGES.md) file lists all the packages required to get the CLI working properly within Kitty terminal. *This is on Arch only and it makes use of the AUR (for now)*. This file does not mention all the applications required for Hyprland, for that I kind of just *"track"* the package through my [installation guide](https://docs.specarino.com/). Hopefully I figure out a better way of tracking packages within Arch, any pointers towards that are appreciated.
-
-# Screenshots TODO
-...
