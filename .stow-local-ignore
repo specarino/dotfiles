@@ -16,6 +16,7 @@ _darcs
 \.gitmodules
 
 scripts
+assets
 ^/PACKAGES.*
 
 .+~          # emacs backup files
