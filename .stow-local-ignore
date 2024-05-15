@@ -18,6 +18,7 @@ _darcs
 scripts
 assets
 ^/PACKAGES.*
+^/DOC.*
 
 .+~          # emacs backup files
 \#.*\#       # emacs autosave files
