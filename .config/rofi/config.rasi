@@ -10,6 +10,7 @@ configuration{
     display-run: "   Run ";
     display-window: "   Window ";
     display-filebrowser: "  Files ";
+    display-clipboard: " 󱉧 Clipboard ";
     sidebar-mode: true;
     // window-command: "hyprctl dispatch focuswindow {window}";
     matching: "fuzzy";
