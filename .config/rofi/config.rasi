@@ -12,6 +12,7 @@ configuration{
     display-filebrowser: "  Files ";
     display-clipboard: " 󱉧 Clipboard ";
     sidebar-mode: true;
+    // window-command doesn't exist in rofi-wayland
     // window-command: "hyprctl dispatch focuswindow {window}";
     matching: "fuzzy";
     case-sensitive: false;
