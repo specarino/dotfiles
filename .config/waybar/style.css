@@ -61,6 +61,7 @@ window#waybar.hidden {
 #pulseaudio,
 #network,
 #clock,
+#window,
 #tray {
   border-radius: 16px;
   border-style: solid;
@@ -87,7 +88,7 @@ window#waybar.hidden {
   color: @peach;
 }
 #cpu {
-  color: @lavender;
+  color: @blue;
 }
 #battery {
   color: @red;
@@ -128,6 +129,14 @@ window#waybar.hidden {
 
 #clock {
   color: @mauve;
+}
+
+#window {
+  color: @lavender;
+}
+
+window#waybar.empty #window {
+  background-color: transparent;
 }
 
 tooltip {

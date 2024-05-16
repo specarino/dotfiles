@@ -8,22 +8,35 @@
     // Choose the order of the modules
     "modules-left": [
 	      "custom/logo",
-        "cpu",
-        "temperature",
-        "memory",
-        "tray"
+        "clock",
+        "tray",
+        "hyprland/window"
     ],
     "modules-center": [
         "hyprland/workspaces"
     ],
     "modules-right": [
-	      "network",
+        // "cpu",
+        "temperature",
+        "memory",
+        "network",
 	      "pulseaudio",
         "backlight",
 	      "battery",
-        "clock"
     ],
     // Modules configuration
+    "hyprland/window": {
+        "format": "{}",
+        "rewrite": {
+            "(.*) — Mozilla Firefox": "$1",
+            ".*@.*:(.*)": "$1", // remove user@host
+            ".vim (.*)": " $1",
+            "[0-9]+:(.*)": " $1" // tmux
+        },
+        "icon": true,
+        "icon-size": 14,
+        "separate-outputs": true
+    },
     "hyprland/workspaces": {
         "on-click": "activate",
         "format": "{icon}",
