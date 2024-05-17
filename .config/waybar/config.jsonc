@@ -9,7 +9,6 @@
     "modules-left": [
 	    "custom/logo",
         "clock",
-        "tray",
         "hyprland/window",
     ],
     "modules-center": [
@@ -19,6 +18,7 @@
         // "cpu",
         // "temperature",
         // "memory",
+        "tray",
         "network",
 	    "pulseaudio",
         "backlight",
