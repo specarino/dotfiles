@@ -27,6 +27,7 @@
     // Modules configuration
     "hyprland/window": {
         "format": "{}",
+        "max-length": 35,
         "rewrite": {
             "(.*) — Mozilla Firefox": "$1",
             ".*@.*:(.*)": "$1", // remove user@host
