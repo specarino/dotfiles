@@ -154,6 +154,7 @@ alias rm="rmtrash --forbid-root=ask-forbid"
 alias rmdir="rmdirtrash --forbid-root=ask-forbid"
 # without it, rmtrash and rmdirtrash won’t be called when using sudo
 alias sudo="sudo "
+alias cpu="auto-cpufreq --stats"
 
 # pfetch on clear command shenanigans
 # redisplay is for prompt

@@ -17,8 +17,8 @@
     ],
     "modules-right": [
         // "cpu",
-        "temperature",
-        "memory",
+        // "temperature",
+        // "memory",
         "network",
 	      "pulseaudio",
         "backlight",
