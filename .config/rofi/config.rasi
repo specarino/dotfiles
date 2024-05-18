@@ -14,7 +14,8 @@ configuration{
     sidebar-mode: true;
     // window-command doesn't exist in rofi-wayland
     // window-command: "hyprctl dispatch focuswindow {window}";
-    matching: "fuzzy";
+    // can be fuzzy
+    matching: "normal";
     case-sensitive: false;
 }
 
