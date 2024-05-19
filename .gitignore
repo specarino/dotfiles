@@ -10,3 +10,4 @@
 # ignore nvim lazy-lock files
 .config/nvim/lazy-lock.json
 .config/lazyvim/lazy-lock.json
+.config/lazyvim/lazyvim.json
