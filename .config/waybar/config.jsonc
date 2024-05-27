@@ -22,6 +22,7 @@
         "network",
 	    "pulseaudio",
         "backlight",
+      "idle_inhibitor",
 	    "battery",
     ],
     // Modules configuration
@@ -152,4 +153,11 @@
         "on-click": "pgrep pavucontrol || pavucontrol",
         "on-click-right": "pkill pavucontrol"
     },
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "format-icons": {
+            "activated": "󰅶",
+            "deactivated": "󰒲"
+        }
+    }
 }

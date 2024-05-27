@@ -62,6 +62,7 @@ window#waybar.hidden {
 #network,
 #clock,
 #window,
+#idle_inhibitor,
 #tray {
   border-radius: 16px;
   border-style: solid;
@@ -133,6 +134,10 @@ window#waybar.hidden {
 
 #window {
   color: @lavender;
+}
+
+#idle_inhibitor {
+  color: @sky;
 }
 
 window#waybar.empty #window {
