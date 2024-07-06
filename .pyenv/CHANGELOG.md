@@ -1,5 +1,21 @@
 # Version History
 
+## Release v2.4.7
+* Add support for anaconda3-2024.06-1 by @binbjz in https://github.com/pyenv/pyenv/pull/3009
+* Fix debug build for X.Yt-dev by @native-api in https://github.com/pyenv/pyenv/pull/
+
+## Release v2.4.6
+* CI: push MacOS jobs to MacOS 13 and 14 by @native-api in https://github.com/pyenv/pyenv/pull/3002
+* Add 3.13.0b3t and exclude it from `pyenv latest` by @colesbury in https://github.com/pyenv/pyenv/pull/3001
+* Speed up `pyenv prefix` by not constructing advice text when it would be discarded by @Erotemic in https://github.com/pyenv/pyenv/pull/3005
+
+## Release v2.4.5
+* Add CPython 3.13.0b3 by @edgarrmondragon in https://github.com/pyenv/pyenv/pull/2996
+
+## Release v2.4.4
+* Add support for miniconda3 24.5.0-0 with py3.12, py3.11, py3.10, py3.9 by @binbjz in https://github.com/pyenv/pyenv/pull/2994
+* Add support for free-threaded Python by @colesbury in https://github.com/pyenv/pyenv/pull/2995
+
 ## Release v2.4.3
 * Add miniconda3 24.4.0-0 by @binbjz in https://github.com/pyenv/pyenv/pull/2982
 
