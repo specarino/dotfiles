@@ -13,7 +13,7 @@
 #   -u/--upgrade     Imply --force
 #
 
-PYENV_VIRTUALENV_VERSION="1.2.3"
+PYENV_VIRTUALENV_VERSION="1.2.4"
 
 set -e
 [ -n "$PYENV_DEBUG" ] && set -x
@@ -325,7 +325,7 @@ else
 fi
 
 if [[ -n "${VERSION_NAME}" ]] && command -v pyenv-latest >/dev/null; then
-  VERSION_NAME="$(pyenv-latest -q "${VERSION_NAME}" || echo "${VERSION_NAME}")"
+  VERSION_NAME="$(pyenv-latest -f "${VERSION_NAME}")"
 fi
 
 if [ -z "${VERSION_NAME}" ] || [ -z "${VIRTUALENV_NAME}" ]; then
