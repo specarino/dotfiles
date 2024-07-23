@@ -18,9 +18,9 @@
       },
       "size": {
         "maxPrefix": "MB",
-        "ndigits": 0
+        "ndigits": 0,
+        "binaryPrefix": "jedec"
       },
-      "binaryPrefix": "jedec"
   },
   
   "modules": [
