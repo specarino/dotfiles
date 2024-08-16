@@ -89,7 +89,7 @@ plugins=(... git)
 | `gdnolock`             | `git diff $@ ":(exclude)package-lock.json" ":(exclude)\*.lock"`                                                                 |
 | `gdt`                  | `git diff-tree --no-commit-id --name-only -r`                                                                                   |
 | `gf`                   | `git fetch`                                                                                                                     |
-| `gfa`                  | `git fetch --all --tags --prune`                                                                                                       |
+| `gfa`                  | `git fetch --all --tags --prune`                                                                                                |
 | `gfo`                  | `git fetch origin`                                                                                                              |
 | `gg`                   | `git gui citool`                                                                                                                |
 | `gga`                  | `git gui citool --amend`                                                                                                        |
@@ -114,6 +114,7 @@ plugins=(... git)
 | `gma`                  | `git merge --abort`                                                                                                             |
 | `gmc`                  | `git merge --continue`                                                                                                          |
 | `gms`                  | `git merge --squash`                                                                                                            |
+| `gmff`                 | `git merge --ff-only`                                                                                                           |
 | `gmom`                 | `git merge origin/$(git_main_branch)`                                                                                           |
 | `gmum`                 | `git merge upstream/$(git_main_branch)`                                                                                         |
 | `gmtl`                 | `git mergetool --no-prompt`                                                                                                     |
@@ -125,6 +126,8 @@ plugins=(... git)
 | `gprav`                | `git pull --rebase --autostash -v`                                                                                              |
 | `gprom`                | `git pull --rebase origin $(git_main_branch)`                                                                                   |
 | `gpromi`               | `git pull --rebase=interactive origin $(git_main_branch)`                                                                       |
+| `gprum`                | `git pull --rebase upstream $(git_main_branch)`                                                                                 |
+| `gprumi`               | `git pull --rebase=interactive upstream $(git_main_branch)`                                                                     |
 | `ggpull`               | `git pull origin "$(git_current_branch)"`                                                                                       |
 | `ggl`                  | `git pull origin $(current_branch)`                                                                                             |
 | `gluc`                 | `git pull upstream $(git_current_branch)`                                                                                       |
@@ -133,8 +136,10 @@ plugins=(... git)
 | `gpd`                  | `git push --dry-run`                                                                                                            |
 | `gpf!`                 | `git push --force`                                                                                                              |
 | `ggf`                  | `git push --force origin $(current_branch)`                                                                                     |
-| `gpf`                  | On Git >= 2.30: `git push --force-with-lease --force-if-includes`                                                               |
-| `gpf`                  | On Git < 2.30: `git push --force-with-lease`                                                                                    |
+| `gpf`                  | On Git >= 2.30: after confirmation, `git push --force-with-lease --force-if-includes`                                           |
+| `gpf`                  | On Git < 2.30: after confirmation, `git push --force-with-lease`                                                                |
+| `gpff`                 | On Git >= 2.30: `git push --force-with-lease --force-if-includes`                                                               |
+| `gpff`                 | On Git < 2.30: `git push --force-with-lease`                                                                                    |
 | `ggfl`                 | `git push --force-with-lease origin $(current_branch)`                                                                          |
 | `gpsup`                | `git push --set-upstream origin $(git_current_branch)`                                                                          |
 | `gpsupf`               | On Git >= 2.30: `git push --set-upstream origin $(git_current_branch) --force-with-lease --force-if-includes`                   |
@@ -154,6 +159,7 @@ plugins=(... git)
 | `grbd`                 | `git rebase $(git_develop_branch)`                                                                                              |
 | `grbm`                 | `git rebase $(git_main_branch)`                                                                                                 |
 | `grbom`                | `git rebase origin/$(git_main_branch)`                                                                                          |
+| `grbum`                | `git rebase upstream/$(git_main_branch)`                                                                                        |
 | `grf`                  | `git reflog`                                                                                                                    |
 | `gr`                   | `git remote`                                                                                                                    |
 | `grv`                  | `git remote --verbose`                                                                                                          |
