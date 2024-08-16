@@ -255,6 +255,7 @@ alias gm='git merge'
 alias gma='git merge --abort'
 alias gmc='git merge --continue'
 alias gms="git merge --squash"
+alias gmff="git merge --ff-only"
 alias gmom='git merge origin/$(git_main_branch)'
 alias gmum='git merge upstream/$(git_main_branch)'
 alias gmtl='git mergetool --no-prompt'
@@ -274,6 +275,8 @@ compdef _git ggu=git-checkout
 
 alias gprom='git pull --rebase origin $(git_main_branch)'
 alias gpromi='git pull --rebase=interactive origin $(git_main_branch)'
+alias gprum='git pull --rebase upstream $(git_main_branch)'
+alias gprumi='git pull --rebase=interactive upstream $(git_main_branch)'
 alias ggpull='git pull origin "$(git_current_branch)"'
 
 function ggl() {
@@ -297,10 +300,13 @@ function ggf() {
 }
 compdef _git ggf=git-checkout
 
-alias gpf!='git push --force'
+alias 'gpf!'='git push --force'
 is-at-least 2.30 "$git_version" \
-  && alias gpf='git push --force-with-lease --force-if-includes' \
-  || alias gpf='git push --force-with-lease'
+  && alias gpf='read -k 1 -q "?Continue force-push? [y/N] " && echo && git push --force-with-lease --force-if-includes' \
+  || alias gpf='read -k 1 -q "?Continue force-push? [y/N] " && echo && git push --force-with-lease'
+is-at-least 2.30 "$git_version" \
+  && alias gpff='git push --force-with-lease --force-if-includes' \
+  || alias gpff='git push --force-with-lease'
 
 function ggfl() {
   [[ "$#" != 1 ]] && local b="$(git_current_branch)"
@@ -337,6 +343,7 @@ alias grbs='git rebase --skip'
 alias grbd='git rebase $(git_develop_branch)'
 alias grbm='git rebase $(git_main_branch)'
 alias grbom='git rebase origin/$(git_main_branch)'
+alias grbum='git rebase upstream/$(git_main_branch)'
 alias grf='git reflog'
 alias gr='git remote'
 alias grv='git remote --verbose'
