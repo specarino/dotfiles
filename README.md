@@ -463,7 +463,7 @@ make sure to disable the current theme in your plugin manager. See
     ```zsh
     git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
     ```
-2. Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`.
+2. Open `~/.zshrc`, find the line that sets `ZSH_THEME`, and change its value to `"powerlevel10k/powerlevel10k"`.
 
 ### Prezto
 
@@ -535,11 +535,6 @@ echo 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zs
 
 [zsh-theme-powerlevel10k-git](https://aur.archlinux.org/packages/zsh-theme-powerlevel10k-git/)
 referenced above is the official Powerlevel10k package.
-
-There is also [zsh-theme-powerlevel10k](
-  https://www.archlinux.org/packages/extra/x86_64/zsh-theme-powerlevel10k/) package.
-Historically, [it has been breaking often and for extended periods of time](
-  https://github.com/romkatv/powerlevel10k/pull/786). **Do not use it.**
 
 ### Alpine Linux
 
