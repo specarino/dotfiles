@@ -1,5 +1,24 @@
 # Version History
 
+## Release v2.4.22
+* Speed up building bundled OpenSSL by @native-api in https://github.com/pyenv/pyenv/pull/3124
+* CI: add building modified scripts with bundled MacOS dependencies by @native-api in https://github.com/pyenv/pyenv/pull/3123
+* CL: + test modified scripts with tar.gz source by @native-api in https://github.com/pyenv/pyenv/pull/3125
+* Fix 404 for openssl-3.4.0 release in build 3.13.1 by @dlamblin in https://github.com/pyenv/pyenv/pull/3122
+
+## Release v2.4.21
+* Add CPython 3.13.1t by @makukha in https://github.com/pyenv/pyenv/pull/3120
+* Prefer tcl-tk@8 from Homebrew due to release of Tcl/Tk 9 with which only 3.12+ are compatible by @native-api in https://github.com/pyenv/pyenv/pull/3118
+
+## Release v2.4.20
+* README: Fix Markdown in "Notes about python releases" by @noelleleigh in https://github.com/pyenv/pyenv/pull/3112
+* README: correct link to shell setup instructions by @shortcuts in https://github.com/pyenv/pyenv/pull/3113
+* Add CPython 3.9.21, 3.10.16, 3.11.11, 3.12.8 and 3.13.1 by @edgarrmondragon in https://github.com/pyenv/pyenv/pull/3117
+
+## Release v2.4.19
+* Add CPython 3.14.0a2 by @nedbat in https://github.com/pyenv/pyenv/pull/3110
+* Add quick start section and gif demo to accompany it. by @madhu-GG in https://github.com/pyenv/pyenv/pull/3044
+
 ## Release v2.4.18
 * Add miniforge3-24.9.2-0 by @goerz in https://github.com/pyenv/pyenv/pull/3106
 
