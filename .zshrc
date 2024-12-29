@@ -155,6 +155,8 @@ alias rmdir="rmdirtrash --forbid-root=ask-forbid"
 # without it, rmtrash and rmdirtrash won’t be called when using sudo
 alias sudo="sudo "
 alias cpu="auto-cpufreq --stats"
+# ssh with kitty terminal
+alias ssh="kitty +kitten ssh"
 
 # pfetch on clear command shenanigans
 # redisplay is for prompt
