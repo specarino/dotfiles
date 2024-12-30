@@ -178,6 +178,9 @@ man() {
 		man "$@"
 }
 
+# default neovim as manpager
+export MANPAGER="nvim +Man!"
+
 # one off calculator
 calc() {
 	echo "scale=3;$@" | bc -l
