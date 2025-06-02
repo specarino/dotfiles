@@ -222,9 +222,9 @@ See [Advanced configuration](#advanced-configuration) for details and more confi
   <details>
   
   ```zsh
-    echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
-    echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
-    echo 'eval "$(pyenv init - zsh)"' >> ~/.zshrc
+  echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+  echo '[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
+  echo 'eval "$(pyenv init - zsh)"' >> ~/.zshrc
   ```
   
   If you wish to get Pyenv in noninteractive login shells as well, also add the commands to `~/.zprofile` or `~/.zlogin`.
@@ -236,21 +236,39 @@ See [Advanced configuration](#advanced-configuration) for details and more confi
 
   1. If you have Fish 3.2.0 or newer, execute this interactively:
      ```fish
-       set -Ux PYENV_ROOT $HOME/.pyenv
-       test -d $PYENV_ROOT/bin; and fish_add_path $PYENV_ROOT/bin
+     set -Ux PYENV_ROOT $HOME/.pyenv
+     test -d $PYENV_ROOT/bin; and fish_add_path $PYENV_ROOT/bin
      ```
 
   2. Otherwise, execute the snippet below:
      ```fish
-       set -Ux PYENV_ROOT $HOME/.pyenv
-       test -d $PYENV_ROOT/bin; and set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
+     set -Ux PYENV_ROOT $HOME/.pyenv
+     test -d $PYENV_ROOT/bin; and set -U fish_user_paths $PYENV_ROOT/bin $fish_user_paths
      ```
 
   3. Now, add this to `~/.config/fish/config.fish`:
      ```fish
-       pyenv init - fish | source
+     pyenv init - fish | source
      ```
   </details>
+
+#### Nushell
+
+  <details>
+
+  Add the following lines to your `config.nu` to add Pyenv and its shims to your `PATH`.
+  Shell integration (completions and subcommands changing the shell's state)
+  isn't currently supported.
+
+  ~~~ nu
+  $env.PYENV_ROOT = "~/.pyenv" | path expand
+  if (( $"($env.PYENV_ROOT)/bin" | path type ) == "dir") {
+    $env.PATH = $env.PATH | prepend $"($env.PYENV_ROOT)/bin" }
+  $env.PATH = $env.PATH | prepend $"(pyenv root)/shims"
+  ~~~
+
+  </details>
+
 
 ### C. Restart your shell
 ----
